@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body {
+    background-color: aliceblue;
+}
+
+header {
+    background-image: url(./pictures/header.jpeg);  /* baisser l'image header */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+}
+header h1 {
+    color: yellow;
+    text-align: center;
+    margin-top: 160px;
+    font-size: 90px;
+    word-spacing: 1rem;
+}
+header p {
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 40px;
+}
+.icon {
+    text-align: center;
+    margin-top: 40px
+}
+.logoNav {
+    width: 200px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    align-items: center;
+   
+}
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+}
+nav ul li a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.contactbutton a {
+    color: black;
+    background-color: yellow;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+
+
