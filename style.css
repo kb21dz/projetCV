@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
  body {
-    background-color: aliceblue;
+    background-color: beige;
 }
 
 header {
@@ -29,7 +29,7 @@ header p {
 }
 .icon {
     text-align: center;
-    margin-top: 40px
+    margin-top: 75px
 }
 .logoNav {
     width: 200px;
@@ -43,14 +43,18 @@ nav {
 }
 nav ul li {
     display: inline;
-    margin-right: 50px;
+    padding-right: 50px;
 }
 nav ul li a {
     padding: 20px;
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 22px;
 }
+nav ul li a:hover {
+    color: yellow;
+}
+
 .contactbutton a {
     color: black;
     background-color: yellow;
@@ -58,7 +62,51 @@ nav ul li a {
     padding: 10px 20px;
     font-weight: bold;
     margin-right: 20px;
+    font-size: 22px;
+}
+.contactbutton a:hover {
+    color: yellow;
+    background-color: black;
+    border: 1px solid yellow;
+    font-size: 22px;
 }
 
+/* --------------------------------ABOUT ME ---------------------------- */
+hr {
+    width: 120px;
+    margin: 0 auto;
+}
+#aboutme {
+    margin-top: 50px;     
+}
+
+.aboutcontent {
+    display: flex;
+    margin: 40px 30px;
+}
+.aboutcontent p {
+    padding: 20px;
+    font-size: 20px;
+    width: 60%;
+}
+
+#aboutme h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.skills {
+    text-align: center;
+    padding: 10px;
+    width: 40%;
+}
+.skills h2{
+    margin-bottom: 20px;
+    margin-top: -10px;
+    
+}
+.skills img {
+    background-color: #9f9a9a4e;
+    padding: 10px;
+}
 
 
