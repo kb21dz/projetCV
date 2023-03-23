@@ -8,7 +8,7 @@
 }
 
 header {
-    background-image: url(./pictures/header.jpeg);  /* baisser l'image header */
+    background-image: url(./pictures/header.jpeg);  
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -109,4 +109,140 @@ hr {
     padding: 10px;
 }
 
+/* --------------------------------EXPERIENCE----------------------------------------------------- */
 
+#experience h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.SectionDeuxSlider {
+    
+    margin: auto;
+    position: relative;
+    width: 80%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.SliderContainer {
+    display: flex;
+    width: calc(250px * 8);
+    animation: sliderGalerie 30s linear infinite; 
+}
+.SliderContainer:hover {
+    animation-play-state: paused ; 
+}
+@keyframes sliderGalerie {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 4));
+    }
+}
+.SlideElement {
+    height: 350px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+    
+    
+}
+.overlay {
+    position: absolute;
+    transform: scale(0);
+    top: 50%;
+  
+    
+    
+   
+}
+.SlideElement img .overlay {
+    position: relative;
+}
+.SlideElement:hover .overlay {
+    transform: scale(1);
+    
+}
+
+.SlideElement img {
+    width: 80%;
+    transition: transform 1s; 
+}
+
+.SlideElement img:hover {
+    transform: translateZ(20px);
+    opacity: 20%; 
+}
+
+.SectionDeuxSlider::before,
+.SectionDeuxSlider::after{
+    background:  linear-gradient(to right, rgba(137, 134, 117, 0.374) 0%, rgb(255, 255, 255,0) 100%);
+    content: ' ';
+    height: 100%;
+    position: absolute;
+    width: 10%;
+    z-index: 2;
+}
+.SectionDeuxSlider::before {
+    left: 0;
+    top: 0;
+}
+.SectionDeuxSlider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+/* -------------------------FORMULAIRE------------------------ */
+
+#formulaire h1 {
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+form {
+    max-width: 600px;
+    height: 500px;
+    padding: 30px;
+    /* background-image: url(./pictures/batman-dc-comics-1-57660-440x275-MM-80.webp);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover; */
+    background-color: rgba(241, 243, 181, 0.81);
+    border-radius: 5px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 10px #ccc; 
+    }
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+        
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    border: 2px solid #f3f03b;
+    border-radius: 5px;
+    box-sizing: border-box;
+        
+    }
+    button[type="submit"] {
+        background-color: yellow;
+        color: black;
+        padding: 10px 20px;
+        border: 2px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button[type="submit"]:hover {
+        background-color: black;
+        color: yellow;
+    }
