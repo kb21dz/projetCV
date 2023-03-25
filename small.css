@@ -1,0 +1,108 @@
+
+
+header {
+    height: 45vh;
+   
+    
+}
+header h1 {
+    font-size: 35px;
+    margin-top: 90px;
+}
+header p {
+    font-size: 20px
+}
+.logoNav {
+    width: 20%;
+   
+} 
+nav ul li {
+    display: none;
+}
+.contactbutton a{
+    font-size: 13px;
+    padding: 8px 16px;
+}
+.icon {
+    margin-top: 50px;
+}
+.icon img {
+    width: 30px;
+}
+
+/* -------------------------------ABOUTME--------------------------------- */
+
+#aboutme h1 {
+    text-align: center;
+    font-size: 18px;
+}
+.aboutcontent {
+    display: block;  
+}
+.aboutcontent p {
+    width: 100%;
+    font-size: 15px;
+    margin-top: -30px;
+}
+.skills {
+    margin: 0 auto;
+}
+.skills h2 {
+    font-size: 14px;
+}
+.skills img {
+    width: 30px;
+    padding: 4px;
+}
+
+/* --------------------------------EXPERIENCE----------------------------------------------------- */
+.SectionDeuxSlider {
+   
+}
+#experience h1 {
+    font-size: 18px;
+}
+.SlideElement {
+    height: 200px;
+    perspective: 700px;
+}
+.SlideElement img {
+    height: 130px;
+    width: 100px;
+}
+
+/* --------------------------------EDUCATION----------------------------------------------------- */
+
+#education h1 {
+    font-size: 18px;
+}
+.gotham, .colombia, .bob {
+    text-align: center;
+}
+.container {
+    display: block;
+}
+.gotham img, .colombia img, .bob img {
+    width: 180px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+/* --------------------------------CONTACT----------------------------------------------------- */
+#formulaire h1 {
+    font-size: 18px;
+}
+form {
+    max-width: 300px;
+    height: 300px;
+}
+label {
+    
+}
+input, textarea {
+    font-size: 10px;
+    height: 10px;
+}
+button[type="submit"] {
+    font-size: 10px;
+}

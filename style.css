@@ -114,11 +114,11 @@ hr {
 #experience h1{
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 50px;
+    
 }
 .SectionDeuxSlider {
     
-    margin: auto;
+    margin: 30px auto;
     position: relative;
     width: 80%;
     display: grid;
@@ -156,9 +156,6 @@ hr {
     transform: scale(0);
     top: 50%;
   
-    
-    
-   
 }
 .SlideElement img .overlay {
     position: relative;
@@ -196,53 +193,89 @@ hr {
     top: 0;
     transform: rotateZ(180deg);
 }
+/* --------------------------------EDUCATION----------------------------------------------------- */
+
+#education h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 40px;
+    
+}
+.gotham img, .colombia img, .bob img{
+    width: 220px;
+    height: 160px;
+    box-shadow: 6px 6px 25px rgba(5, 5, 5, 1);
+    margin-bottom: 7px;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+} 
+.container p {
+    text-align: center;
+}
+
 
 /* -------------------------FORMULAIRE------------------------ */
 
 #formulaire h1 {
     text-align: center;
     text-transform: uppercase;
-    
+    margin-top: 40px;
 }
 
 form {
-    max-width: 600px;
-    height: 500px;
-    padding: 30px;
-    /* background-image: url(./pictures/batman-dc-comics-1-57660-440x275-MM-80.webp);
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background-image: url(./pictures/batman-dc-comics-1-57660-440x275-MM-80.webp);
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: cover; */
-    background-color: rgba(241, 243, 181, 0.81);
+    background-position: center;
+    background-size: cover;
     border-radius: 5px;
-    margin: 50px auto;
-    box-shadow: 0px 0px 10px #ccc; 
-    }
+    box-shadow: 0px 0px 10px #ccc;
+}
 label {
     display: block;
     margin-bottom: 5px;
     color: #333;
-        
 }
 input, textarea {
-    width: 100%;
+    width: 50%;
     padding: 10px;
     margin-bottom: 30px;
-    margin-top: 20px;
-    border: 2px solid #f3f03b;
+    border: 2px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-        
-    }
-    button[type="submit"] {
-        background-color: yellow;
-        color: black;
-        padding: 10px 20px;
-        border: 2px solid black;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    button[type="submit"]:hover {
-        background-color: black;
-        color: yellow;
-    }
+}
+button[type="submit"] {
+    background-color: black;
+    color: yellow;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+button[type="submit"]:hover {
+    background-color: yellow;
+    color: black;
+    border: 1px solid black;
+}
+
+/* -------------------------FOOTER------------------------ */
+
+footer {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-top: 30px;
+}
+footer img {
+    width: 55px;
+}
+footer p {
+    color: yellow;
+}
