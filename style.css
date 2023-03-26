@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
- body {
+html {
+    scroll-behavior: smooth;
+}
+body {
     background-color: beige;
 }
 
@@ -26,6 +29,7 @@ header p {
     text-align: center;
     margin-top: 0px;
     font-size: 40px;
+    font-family: 'Yrsa', serif;
 }
 .icon {
     text-align: center;
@@ -50,6 +54,7 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 22px;
+    font-family: 'Roboto', sans-serif;
 }
 nav ul li a:hover {
     color: yellow;
@@ -70,7 +75,22 @@ nav ul li a:hover {
     border: 1px solid yellow;
     font-size: 22px;
 }
-
+.line {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: yellow;
+    margin-bottom: 7px;
+}
+.MenuBurger {
+    display: none;
+}
+.affichageMenu {
+    width: 40%;
+    z-index: 3;
+    left: 20px;
+    background-color: #5a5346de;
+}
 /* --------------------------------ABOUT ME ---------------------------- */
 hr {
     width: 120px;
@@ -88,11 +108,13 @@ hr {
     padding: 20px;
     font-size: 20px;
     width: 60%;
+    font-family: 'Yrsa', serif;
 }
 
 #aboutme h1{
     text-align: center;
     text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
 }
 .skills {
     text-align: center;
@@ -102,6 +124,8 @@ hr {
 .skills h2{
     margin-bottom: 20px;
     margin-top: -10px;
+    font-size: 18px;
+    font-family: 'Yrsa', serif;
     
 }
 .skills img {
@@ -114,6 +138,7 @@ hr {
 #experience h1{
     text-align: center;
     text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
     
 }
 .SectionDeuxSlider {
@@ -148,13 +173,16 @@ hr {
     align-items: center;
     padding: 15px;
     perspective: 100px;
-    
-    
 }
 .overlay {
     position: absolute;
     transform: scale(0);
     top: 50%;
+    left: 30px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(34, 34, 29);
+    color: yellow;
+    padding: 5px;
   
 }
 .SlideElement img .overlay {
@@ -199,6 +227,7 @@ hr {
     text-align: center;
     text-transform: uppercase;
     margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
     
 }
 .gotham img, .colombia img, .bob img{
@@ -207,13 +236,16 @@ hr {
     box-shadow: 6px 6px 25px rgba(5, 5, 5, 1);
     margin-bottom: 7px;
 }
+
 .container {
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
 } 
-.container p {
+.container p{
     text-align: center;
+    font-family: 'Yrsa', serif;
+    font-size: 18px;
 }
 
 
@@ -223,6 +255,7 @@ hr {
     text-align: center;
     text-transform: uppercase;
     margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
 }
 
 form {
